@@ -6,6 +6,7 @@ export const GifGrid = ({category, index}) => {
   const { images, isLoading } = useFetchGifs(category);
   
   const handleToggle = (index) => {
+    
     const h3Clickeado = document.getElementById(index);
     h3Clickeado.classList.toggle('card-hidden');
   
